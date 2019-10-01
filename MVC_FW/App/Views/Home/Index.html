@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+    <h1>Welcome</h1>
+    <p>Hello from a twig template</p>
+
+    <ul>
+        {% for item in color %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
