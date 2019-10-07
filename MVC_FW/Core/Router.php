@@ -1,5 +1,6 @@
 <?php
     namespace Core;
+    use Core\Views;
     class Router {
         public static $route = array (
             
@@ -83,6 +84,7 @@
                 } else {
                     echo $controller;
                     echo "Controller not found";
+                    Views::renderTemplate("Home/error.html");
                 }
 
             } else {

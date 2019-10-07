@@ -16,9 +16,14 @@
 
         public function indexAction () {
             $posts = Post::getAll();
-            Views::renderTemplate("Posts/Index.html", [
-                'posts' => $posts
-            ]);
+            if ($posts) {
+                Views::renderTemplate("Posts/Index.html", [
+                    'posts' => $posts
+                ]);
+            } else {
+                
+                echo "Không thể lấy dữ liệu";
+            }
         }
 
         public function newPostAction () {
@@ -30,10 +35,13 @@
         public function editPostAction () {
             $id = $this->routeParams['id'];
             $post = Post::getPostById($id);
-
-            Views::renderTemplate('Posts/Detail.html', [
-                'post' => $post[0]
-            ]);
+            if (!empty($post)) {
+                Views::renderTemplate('Posts/Detail.html', [
+                    'post' => $post[0]
+                ]);
+            } else {
+                header("Location: /home/error");
+            }
         }
     }
 ?>

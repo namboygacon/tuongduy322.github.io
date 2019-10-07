@@ -26,5 +26,10 @@
         public function getProfileAction () {
             echo "getProfile - homeController";
         }
+
+        public function errorAction () {
+
+            Views::renderTemplate("Home/error.html");
+        }
     }
 ?>

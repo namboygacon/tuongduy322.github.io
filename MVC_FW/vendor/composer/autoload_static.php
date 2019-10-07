@@ -24,9 +24,18 @@ class ComposerStaticInit52b94d5ce9f53a1ad13e2474f8a43457
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
+        'P' => 
+        array (
+            'Psr\\SimpleCache\\' => 16,
+            'Psr\\Log\\' => 8,
+            'Psr\\Cache\\' => 10,
+        ),
         'C' => 
         array (
             'Core\\' => 5,
+            'Cache\\TagInterop\\' => 17,
+            'Cache\\Adapter\\Common\\' => 21,
+            'Cache\\Adapter\\Apcu\\' => 19,
         ),
         'A' => 
         array (
@@ -51,14 +60,42 @@ class ComposerStaticInit52b94d5ce9f53a1ad13e2474f8a43457
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Core',
+        ),
+        'Cache\\TagInterop\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cache/tag-interop',
+        ),
+        'Cache\\Adapter\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cache/adapter-common',
+        ),
+        'Cache\\Adapter\\Apcu\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cache/apcu-adapter',
         ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/asm89/twig-cache-extension/lib',
     );
 
     public static $prefixesPsr0 = array (
@@ -87,6 +124,7 @@ class ComposerStaticInit52b94d5ce9f53a1ad13e2474f8a43457
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit52b94d5ce9f53a1ad13e2474f8a43457::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit52b94d5ce9f53a1ad13e2474f8a43457::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit52b94d5ce9f53a1ad13e2474f8a43457::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit52b94d5ce9f53a1ad13e2474f8a43457::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit52b94d5ce9f53a1ad13e2474f8a43457::$classMap;
 

@@ -10,6 +10,13 @@ return array(
     'vendor\\logger\\' => array($vendorDir . '/logger'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
+    'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
     'Core\\' => array($baseDir . '/Core'),
+    'Cache\\TagInterop\\' => array($vendorDir . '/cache/tag-interop'),
+    'Cache\\Adapter\\Common\\' => array($vendorDir . '/cache/adapter-common'),
+    'Cache\\Adapter\\Apcu\\' => array($vendorDir . '/cache/apcu-adapter'),
     'App\\' => array($baseDir . '/App'),
+    '' => array($vendorDir . '/asm89/twig-cache-extension/lib'),
 );

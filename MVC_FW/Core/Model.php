@@ -22,5 +22,20 @@
                 return $db;
             }
         }
+
+        protected static function begin () {
+            $db = self::getDB();
+            $db->beginTransaction();
+        }
+
+        protected static function commit () {
+            $db = self::getDB();
+            $db->commit();
+        }
+
+        protected static function rollback () {
+            $db = self::getDB();
+            $db->rollback();
+        }
     }
 ?>

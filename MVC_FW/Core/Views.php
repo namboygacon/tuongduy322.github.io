@@ -1,5 +1,9 @@
 <?php
     namespace Core;
+    use Asm89\Twig\CacheExtension\CacheProvider\PsrCacheAdapter;
+    use Asm89\Twig\CacheExtension\CacheStrategy\LifetimeCacheStrategy;
+    use Asm89\Twig\CacheExtension\Extension as CacheExtension;
+    use Cache\Adapter\Apcu\ApcuCachePool;
 
     class Views {
 
@@ -20,8 +24,15 @@
             
             if ($twig === null) {
                 $loader = new \Twig_Loader_Filesystem("./App/Views");
-                $twig = new \Twig_Environment($loader);
+                $twig = new \Twig_Environment($loader, [
+                    'cache' => './App/Views/cache',
+                ]);
+                
+                $cacheProvider  = new PsrCacheAdapter(new ApcuCachePool());
+                $cacheStrategy  = new LifetimeCacheStrategy($cacheProvider);
+                $cacheExtension = new CacheExtension($cacheStrategy);
 
+                $twig->addExtension($cacheExtension);
             }
 
             echo $twig->render($template, $args);
