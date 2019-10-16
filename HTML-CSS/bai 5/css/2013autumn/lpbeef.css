@@ -1,0 +1,182 @@
+@charset "utf-8";
+/*ページ個別設定-------------------------------------------------------------------------------------------------------------*/
+
+/* --------------------
+LP
+-------------------- */
+/*beef2013autumn*/
+#LP {
+background-color:#fef9e6;
+background-image:url(image/2013autumn/lp_beef_autumn_bg.gif) ;
+background-repeat: repeat-y;
+background-position: center top;
+}
+
+#lpbox{
+    background:#fef9e6;
+    padding:0 0 5px 0 !important;
+}
+
+.LPBeef2013Autumn{
+
+}
+
+#BeefContent1{
+height:1448px;
+position:relative;
+z-index:10;
+}
+
+#BeefContent2{
+height:183px;
+position:relative;
+}
+
+#BeefContent3 {
+height:798px;
+position:relative;
+}
+
+#BeefContent4 {
+height:336px;
+position:relative;
+}
+
+#BeefContent5 {
+height:469px;
+position:relative;
+}
+
+#BeefContent6 {
+height:1324x;
+position:relative;
+}
+
+#BeefContent7 {
+height:818px;
+position:relative;
+}
+
+#BeefContent8 {
+height:818px;
+position:relative;
+}
+
+#BeefContent9 {
+height:818px;
+position:relative;
+}
+
+#BeefContent10 {
+height:190px;
+position:relative;
+}
+
+#MangoBadge1{
+margin-top:-908px;
+margin-left:666px;
+height:286px;
+}
+
+.MangoBtnRight{
+margin-left:12px;
+}
+
+.BeefLinkBtnS{
+position:absolute;
+width:461px;
+height:59px;
+}
+
+.BeefLinkBtnL{
+position:absolute;
+width:618px;
+height:77px;
+}
+
+#BeefLinkBtn1{
+left:457px;
+top:958px;
+}
+
+#BeefLinkBtn2{
+left:8px;
+top:1363px;
+}
+
+#BeefLinkBtn3{
+left:475px;
+top:1363px;
+}
+
+#BeefLinkBtn4{
+left:176px;
+top:699px;
+}
+
+#BeefLinkBtn2{
+}
+
+#MangoContent1Btn{
+
+margin:0;
+padding:12px 18px 17px 18px;
+height:59px;
+}
+
+.MangoContent5Btn{
+margin:0;
+padding:12px 18px 26px 18px;
+height:59px;
+background: url(/image/lp/lp_mango_content5_bg.gif) ;
+}
+
+#MangoContent7Btn{
+margin-top:-87px;
+margin-left:28px;
+height:59px;
+}
+
+/*beef*/
+/*
+body.LPbeef {
+background:#fef4ed !important;
+}
+body.LPbeef #LPbeefBig {
+margin:0 -17px;
+width:1004px;
+position:relative;
+}
+
+body.LPbeef div {
+margin:0 auto;
+width:970px;
+position:relative;
+}
+body.LPbeef div p.LPbeefBtnBig {
+width:618px;
+position:absolute;
+bottom:33px;
+left:176px;
+}
+
+body.LPbeef #LPbeefSmall {
+width:970px;
+}
+body.LPbeef #LPbeefSmall .FloatLeft,
+body.LPbeef #LPbeefSmall .FloatRight {
+width:485px;
+position:relative;
+}
+body.LPbeef #LPbeefSmall .LPbeefBtnSmall {
+width:461px;
+position:absolute;
+top:313px;
+}
+body.LPbeef #LPbeefSmall .FloatRight .LPbeefBtnSmall {
+left:3px;
+}
+body.LPbeef #LPbeefSmall .FloatLeft .LPbeefBtnSmall {
+right:3px;
+}
+*/

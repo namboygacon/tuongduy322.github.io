@@ -1,0 +1,437 @@
+html, body {
+    margin: auto;
+    padding: 0;
+    width: 860px;
+    height: 100%;
+}
+@font-face {
+    font-family: "ShinGoPro";
+    src: url("../fonts/AOTFShinGoProBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "myfont";
+    src: url("../fonts/Brush-Script-Std-Medium_8614.ttf") format("opentype");
+}
+.top {
+    background-image: url("../img/top/Background.png");
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.top .center {
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 730px;
+} 
+img.top_3 {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+img.top_4 {
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+}
+img.top_5 {
+    position: absolute;
+    top: 230px;
+    left: 250px;
+}
+img.top_6 {
+    position: absolute;
+    top: 229px;
+    right: 210px;
+}
+img.top_7 {
+    position: absolute;
+    top: 229px;
+    right: 210px;
+}
+.top .text {
+    position: absolute;
+    top: 319px;
+    left: 350px;
+    font-size: 37px;
+    letter-spacing: 7px;
+    line-height: 110px;
+    color: #1d8dff;
+    font-family: "Shin Go Pro";
+    font-weight: 900;
+    text-align: center;
+}
+.top .text-2 {
+    position: absolute;
+    top: 430px;
+    left: 660px;
+    font-size: 70px;
+    color: #178326;
+    font-family: "Hira Kaku Pro";
+    text-align: center;
+}
+.top .text-3 {
+    position: absolute;
+    top: 550px;
+    left: 730px;
+    font-size: 40px;
+    line-height: 106px;
+    color: #41fe91;
+    font-family: "Ro Brush Std";
+    text-align: center;
+    font-weight: bold;
+}
+.top .text-3 span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.top_8 {
+    position: absolute;
+    top: 430px;
+    left: 280px;
+}
+.top_9 {
+    position: absolute;
+    top: 430px;
+    left: 720px;
+}
+.top .center-2 {
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.top .center-2 img {
+    width: 644px;
+    height: 389px;
+}
+/* .top-2 {
+    position: absolute;
+} */
+.top .text-top-2 {
+    position: relative;
+    top: -580px;
+    left: 0px;
+    font-size: 28px;
+    line-height: 35px;
+    color: #e4e622;
+
+    font-family: "ShinGoPro", sans-serif;
+    text-align: center;
+}
+.top .text-top-3 {
+    position: relative;
+    top: -100px;
+    left: 0px;
+    font-size: 19px;
+    line-height: 32px;
+    color: #1d8dff;
+    font-family: "T BU DGo Std";
+    font-weight: bold;
+    text-align: center;
+}
+.top_10 {
+    position: relative;
+    top: -520px;
+    left: 80px;
+    opacity: 0.5;
+}
+.center-3 {
+    height: 700px;
+    width: 100%;
+    background-image: url("../img/top/商品黄色べた.png");
+}
+
+.top_11 {
+    margin-top: 30px;
+    margin-left: 87px;
+    margin-bottom: 20px;
+}
+.line-1 {
+    position: relative;
+    top: -569px;
+    left: 282px;
+    /* height: 645px; */
+}
+.line-2 {
+    position: relative;
+    top: -569px;
+    left: 576px;
+}
+.top_12 {
+    position: relative;
+    top: -1164px;
+    left: 273px;
+}
+.product-1 {
+    width: 284px;
+    border: 1px solid black;
+    text-align: center;
+}
+.product-1 .text_ {
+    background-color: #f4ecb7;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.product-1 .num {
+    margin-top: 35px;
+    font-size: 24px;
+    color: #097680;
+    font-family: "Ro Brush Std";
+}
+.product-1 .text-bottom {
+    font-size: 10px;
+    line-height: 18px;
+    color: #097680;
+    font-family: "Hira Kaku Std";
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.product-1 .border-num {
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 10px;
+    /* left: 0px; */
+}
+.center-3 {
+    display: flex;
+    flex-flow: row wrap;
+    /* width: 100%; */
+}
+img.img-product {
+    height: 198px;
+    width: 203px;
+}
+.num.num-1 {
+    left: 575px;
+    position: absolute;
+}
+img.img-product.img-product-1 {
+    margin-top: 58px;
+}
+.product-1 .border-num-1 {
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 10px;
+    left: 550px;
+}
+
+.product-1 .border-num-2 {
+    left: 840px;
+}
+.num.num-2 {
+    left: 870px;
+    position: absolute;
+}
+img.img-product.img-product-2 {
+    margin-top: 58px;
+}
+
+.product-1 .border-num-3 {
+    left: 250px;
+}
+.num.num-3 {
+    left: 870px;
+    position: absolute;
+}
+img.img-product.img-product-3 {
+    margin-top: 58px;
+}
+
+.product-1 .border-num-4 {
+    left: 700px;
+}
+.num.num-4 {
+    left: 280px;
+    position: absolute;
+}
+img.img-product.img-product-4 {
+    margin-top: 58px;
+}
+
+.product-1 .border-num-5 {
+    left: 840px;
+}
+.num.num-5 {
+    left: 730px;
+    position: absolute;
+}
+img.img-product.img-product-5 {
+    margin-top: 58px;
+}
+.top.top-bot {
+    height: 813px;
+}
+.top-a {
+    margin-left: 60px;
+    background-image: url('../img/top/商品黄色べた.png');
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+}
+.top-w {
+    width: 100%;
+    background-image: url("../img/top/Background.png");
+    padding-bottom: 40px;
+}
+.top-a  {
+    width: 70%;
+    font-size: 13px;
+    color: #097680;
+    font-family: "Hira Kaku Std";
+    padding-bottom: 40px;
+}
+.button {
+    width: 600px;
+    margin-top: 115px;
+}
+.button-text {
+    position: absolute;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 90px;
+    color: #225ae6;
+    font-family: "T BU DGo Std";
+    font-weight: bold;
+    text-align: center;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 105px;
+}
+.top-w-2 {
+    width: 100%;
+    background-image: url("../img/top/Background.png");
+    padding-bottom: 40px;
+    
+}
+.top-w-2 img {
+    margin-top: 50px;
+}
+.bg-w-2 {
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-a-2 {
+    /* background-image: url("../img/top/真ん中／黒.png"); */
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: rgba(0, 0, 0, .65);
+    /* background: rgba(0, 0, 0, .65) url("../img/top/真ん中／黒.png"); */
+    /* background-image: linear-gradient(rgba(0,0,0,0.6) 100%), url("../img/top/真ん中／黒.png"); */
+}
+.top-w-2-title {
+    color: white;
+    font-size: 52px;
+    line-height: 156px;
+    color: #ffffff;
+    font-family: "Ro Brush Std";
+    text-align: center;
+    font-weight: bold;
+}
+.top-b-1 {
+    text-align: center;
+}
+.top-b-2 {
+    position: relative;
+    background-image: url("../img/top/シロべた.png");
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.story {
+    margin-top: 30px;
+}
+.last-content {
+    margin-top: 30px;
+}
+.title_bot {
+    margin-bottom: 10px;
+    font-size: 45px;
+    line-height: 50px;
+    color: #3f17a1;
+    font-family: "Bodoni";
+    font-weight: bold;
+    text-align: center;
+}
+.subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    color: #3f17a1;
+    font-family: "Hira Kaku Std";
+    font-weight: 600;
+}
+.content {
+    width: 646px;
+    height: 269px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #3c3c3c;
+    font-family: "Hira Kaku Std";
+}
+.footer {
+    color: white;
+    width: 600px;
+    height: 42px;
+    font-size: 10px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Hira Kaku Std";
+    margin-left: 60px;
+    margin-top: 15px;
+}
+.icon {
+    position: absolute;
+    top: 4000px;
+    margin-top: 100px;
+}
+.icon-2 {
+    position: absolute;
+    top: 3600px;
+    left: 900px;
+    margin-top: 100px;
+}
+
+.icon-3 {
+    position: absolute;
+    top: 3600px;
+    margin-top: 100px;
+}
+.icon-4 {
+    position: absolute;
+    top: 4000px;
+    margin-top: 100px;
+    left: 900px;
+}
+.icon-5 {
+    position: absolute;
+    top: 4600px;
+    margin-top: 100px;
+    left: 900px;
+}
+img.center-bg {
+    position: absolute;
+    left: 245px;
+}
+.text-middle {
+    position: absolute;
+    top: 1552px;
+    left: 280px;
+    font-size: 57px;
+    line-height: 80px;
+    color: #225ae6;
+    font-family: "Ro Brush Std";
+    text-align: center;
+}
+.top_a {
+    position: absolute;
+    top: 630px;
+    left: 500px;
+}
