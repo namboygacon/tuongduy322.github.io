@@ -12,42 +12,42 @@ html, body {
     font-family: "myfont";
     src: url("../fonts/Brush-Script-Std-Medium_8614.ttf") format("opentype");
 }
-.top {
+.block {
     background-image: url("../img/top/Background.png");
     height: 100%;
     background-repeat: no-repeat;
 }
-.top .center {
+.block .center {
     margin-left: 100px;
     margin-top: 30px;
     width: 730px;
 } 
-img.top_3 {
+img.img-get {
     position: absolute;
     top: 0px;
     left: 200px;
 }
-img.top_4 {
+img.img-TNEY {
     position: absolute;
     bottom: 0px;
     left: 200px;
 }
-img.top_5 {
+img.img-line {
     position: absolute;
     top: 230px;
     left: 250px;
 }
-img.top_6 {
+img.img-TASTECOLD-1 {
     position: absolute;
     top: 229px;
     right: 210px;
 }
-img.top_7 {
+img.img-TASTECOLD-2 {
     position: absolute;
     top: 229px;
     right: 210px;
 }
-.top .text {
+.block .text {
     position: absolute;
     top: 319px;
     left: 350px;
@@ -59,7 +59,7 @@ img.top_7 {
     font-weight: 900;
     text-align: center;
 }
-.top .text-2 {
+.block .text-2 {
     position: absolute;
     top: 430px;
     left: 660px;
@@ -68,7 +68,7 @@ img.top_7 {
     font-family: "Hira Kaku Pro";
     text-align: center;
 }
-.top .text-3 {
+.block .text-3 {
     position: absolute;
     top: 550px;
     left: 730px;
@@ -79,43 +79,39 @@ img.top_7 {
     text-align: center;
     font-weight: bold;
 }
-.top .text-3 span {
+.block .text-3 span {
     font-size: 20px;
     font-weight: bold;
 }
-.top_8 {
+.img-logo {
     position: absolute;
     top: 430px;
     left: 280px;
 }
-.top_9 {
+.img-logo-2 {
     position: absolute;
     top: 430px;
     left: 720px;
 }
-.top .center-2 {
+.block .center-2 {
     margin-left: 100px;
     margin-top: 150px;
 }
-.top .center-2 img {
+.block .center-2 img {
     width: 644px;
     height: 389px;
 }
-/* .top-2 {
-    position: absolute;
-} */
-.top .text-top-2 {
+.block .text-title {
     position: relative;
     top: -580px;
     left: 0px;
     font-size: 28px;
     line-height: 35px;
     color: #e4e622;
-
     font-family: "ShinGoPro", sans-serif;
     text-align: center;
 }
-.top .text-top-3 {
+.block .text-title-bottom {
     position: relative;
     top: -100px;
     left: 0px;
@@ -126,7 +122,7 @@ img.top_7 {
     font-weight: bold;
     text-align: center;
 }
-.top_10 {
+.img-back-title {
     position: relative;
     top: -520px;
     left: 80px;
@@ -138,7 +134,7 @@ img.top_7 {
     background-image: url("../img/top/商品黄色べた.png");
 }
 
-.top_11 {
+.text-yellow {
     margin-top: 30px;
     margin-left: 87px;
     margin-bottom: 20px;
@@ -147,7 +143,6 @@ img.top_7 {
     position: relative;
     top: -569px;
     left: 282px;
-    /* height: 645px; */
 }
 .line-2 {
     position: relative;
@@ -159,24 +154,24 @@ img.top_7 {
     top: -1164px;
     left: 273px;
 }
-.product-1 {
+.product {
     width: 284px;
     border: 1px solid black;
     text-align: center;
 }
-.product-1 .text_ {
+.product .text_ {
     background-color: #f4ecb7;
     text-align: center;
     padding-top: 6px;
     padding-bottom: 6px;
 }
-.product-1 .num {
+.product .num {
     margin-top: 35px;
     font-size: 24px;
     color: #097680;
     font-family: "Ro Brush Std";
 }
-.product-1 .text-bottom {
+.product .text-bottom {
     font-size: 10px;
     line-height: 18px;
     color: #097680;
@@ -186,16 +181,14 @@ img.top_7 {
     margin-top: 20px;
 }
 
-.product-1 .border-num {
+.product .border-num {
     position: absolute;
     margin-top: 9px;
     margin-left: 10px;
-    /* left: 0px; */
 }
 .center-3 {
     display: flex;
     flex-flow: row wrap;
-    /* width: 100%; */
 }
 img.img-product {
     height: 198px;
@@ -208,14 +201,14 @@ img.img-product {
 img.img-product.img-product-1 {
     margin-top: 58px;
 }
-.product-1 .border-num-1 {
+.product .border-num-1 {
     position: absolute;
     margin-top: 9px;
     margin-left: 10px;
     left: 550px;
 }
 
-.product-1 .border-num-2 {
+.product .border-num-2 {
     left: 840px;
 }
 .num.num-2 {
@@ -226,7 +219,7 @@ img.img-product.img-product-2 {
     margin-top: 58px;
 }
 
-.product-1 .border-num-3 {
+.product .border-num-3 {
     left: 250px;
 }
 .num.num-3 {
@@ -237,7 +230,7 @@ img.img-product.img-product-3 {
     margin-top: 58px;
 }
 
-.product-1 .border-num-4 {
+.product .border-num-4 {
     left: 700px;
 }
 .num.num-4 {
@@ -248,7 +241,7 @@ img.img-product.img-product-4 {
     margin-top: 58px;
 }
 
-.product-1 .border-num-5 {
+.product .border-num-5 {
     left: 840px;
 }
 .num.num-5 {
@@ -258,22 +251,22 @@ img.img-product.img-product-4 {
 img.img-product.img-product-5 {
     margin-top: 58px;
 }
-.top.top-bot {
+.list {
     height: 813px;
 }
-.top-a {
+.top-content-text {
     margin-left: 60px;
     background-image: url('../img/top/商品黄色べた.png');
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 40px;
 }
-.top-w {
+.top-content {
     width: 100%;
     background-image: url("../img/top/Background.png");
     padding-bottom: 40px;
 }
-.top-a  {
+.top-content-text  {
     width: 70%;
     font-size: 13px;
     color: #097680;
@@ -299,13 +292,13 @@ img.img-product.img-product-5 {
     margin-right:auto;
     margin-top: 105px;
 }
-.top-w-2 {
+.block-bottom {
     width: 100%;
     background-image: url("../img/top/Background.png");
     padding-bottom: 40px;
     
 }
-.top-w-2 img {
+.block-bottom img {
     margin-top: 50px;
 }
 .bg-w-2 {
@@ -316,15 +309,12 @@ img.img-product.img-product-5 {
     margin-left: auto;
     margin-right: auto;
 }
-.top-a-2 {
-    /* background-image: url("../img/top/真ん中／黒.png"); */
+.block-icon {
     margin-left: 60px;
     margin-right: 60px;
     background-color: rgba(0, 0, 0, .65);
-    /* background: rgba(0, 0, 0, .65) url("../img/top/真ん中／黒.png"); */
-    /* background-image: linear-gradient(rgba(0,0,0,0.6) 100%), url("../img/top/真ん中／黒.png"); */
 }
-.top-w-2-title {
+.block-icon-title {
     color: white;
     font-size: 52px;
     line-height: 156px;
@@ -333,10 +323,10 @@ img.img-product.img-product-5 {
     text-align: center;
     font-weight: bold;
 }
-.top-b-1 {
+.title-center {
     text-align: center;
 }
-.top-b-2 {
+.block-Intro {
     position: relative;
     background-image: url("../img/top/シロべた.png");
     margin-left: 60px;
@@ -430,7 +420,7 @@ img.center-bg {
     font-family: "Ro Brush Std";
     text-align: center;
 }
-.top_a {
+.img-bottom {
     position: absolute;
     top: 630px;
     left: 500px;
