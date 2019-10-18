@@ -1,0 +1,10 @@
+[01-Oct-2019 04:37:57] [convertmvc.com/] : [INFO] - this is the info message
+[01-Oct-2019 04:37:57] [convertmvc.com/] : [ERROR] - this is the error message
+[01-Oct-2019 04:37:57] [convertmvc.com/] : [WARNING] - this is warning message
+[01-Oct-2019 04:37:57] [convertmvc.com/] : [DEBUG] - this is debug message
+[01-Oct-2019 04:37:57] [convertmvc.com/] : [ERROR] - this is error message
+[01-Oct-2019 04:37:57] [convertmvc.com/favicon.ico] : [INFO] - this is the info message
+[01-Oct-2019 04:37:57] [convertmvc.com/favicon.ico] : [ERROR] - this is the error message
+[01-Oct-2019 04:37:57] [convertmvc.com/favicon.ico] : [WARNING] - this is warning message
+[01-Oct-2019 04:37:57] [convertmvc.com/favicon.ico] : [DEBUG] - this is debug message
+[01-Oct-2019 04:37:57] [convertmvc.com/favicon.ico] : [ERROR] - this is error message
