@@ -1,0 +1,6 @@
+::Tuần 3:: Cho học viên dành ra 1 giờ, 
+cho xem qua list các phần cần tìm hiểu trong tuần, 
+và tập tự lên estimate cho mỗi phần cho đến hết tuần (giống mẫu estimate của Tuần 1 đã cho sẵn), 
+từ đó thực hiện, report hàng ngày các phần đã làm được, 
+có đúng với kế hoạch estimate hay không, 
+ví dụ: Phần Đọc file: 0.5 day, Đọc file performance: 0.5 day, ...
