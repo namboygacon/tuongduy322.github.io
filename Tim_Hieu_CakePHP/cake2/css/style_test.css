@@ -1,0 +1,159 @@
+html, body {
+    margin: 0px;
+}
+.nav {
+    background: #343a40;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.title img {
+    height: 50px;
+}
+.list ul li {
+    list-style-type: none;
+    color: white;
+    display: inline;
+    margin-right: 10px;
+    color: rgba(255,255,255,.5);
+    font-size: 19px;
+}
+.content {
+    width: 760px;
+    margin-left: 123px;
+    margin-top: 25px;
+    
+}
+.item-1 {
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.item-1 img{
+    width: 100%;
+}
+.item-1 h2 {
+    font-size: 33px;
+    margin-top: 0px;
+}
+.category {
+    font-weight: bolder;
+}
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+.card-body {
+    padding: 20px;
+}
+.button a {
+    text-decoration: none;
+    background-color: #005cbf;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: .25rem;
+}
+p.small-text {
+    padding-bottom: 16px;
+}
+.container {
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+.side-bar {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.search-box {
+    margin-bottom: 25px;
+}
+.search-box, .categories-box {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+h5.title.card-header {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.search-box .card-body input, .categories-box .card-body input {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.search-box .card-body input, .categories-box .card-body input {
+    padding-right: 10px;
+}
+.flex-inline {
+    display: flex;
+}
+.flex-inline .button {
+    margin-top: 34px;
+    margin-right: 20px;
+}
+.flex-inline .card-body {
+    padding-right: 10px;
+}
+.flex-inline .button a {
+    margin-top: 34px;
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+    padding: 11px;
+}
+.flex-inline .card-body ul li {
+    list-style-type: none;
+    
+}
+.flex-inline .card-body ul{
+    padding-left: 0px;
+    margin-top: 0px;
+}
+.block-content {
+    border: 1px solid rgba(0,0,0,.125);
+    padding-left: 20px;
+}
+.block-content .title h2 {
+    margin-top: 0px;
+    font-size: 32px;
+    margin-bottom: 27px;
+}
+.title-bold {
+    font-weight: bold;
+}
+.no-line {
+    text-decoration: none;
+}
+.small-text {
+    margin-bottom: 20px;
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+.p-text {
+    margin-bottom: 40px;
+}
+.block-content img {
+    margin-bottom: 20px;
+    max-width: 600px;
+}
