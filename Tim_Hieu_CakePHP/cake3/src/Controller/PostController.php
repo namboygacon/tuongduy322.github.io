@@ -68,8 +68,8 @@
         public function insertData() {
             $this->autoRender = false;
             $this->connection->insert("employees", [
-                'name' => 'john wick',
-                'email' => 'john_wick@gmail.com',
+                'name' => 'abc',
+                'email' => 'abc@gmail.com',
                 'phone' => '0606066060'
             ]);
         }
@@ -176,8 +176,8 @@
             $data = [];
             $sortBy = 'name';
 
-            if (isset($_SESSION['data_l'])){
-                $data = $_SESSION['data_l'];
+            if (isset($_SESSION['dataPre'])){
+                $data = $_SESSION['dataPre'];
             }
 
             if (isset($_SESSION['last_option'])){
@@ -211,20 +211,19 @@
                 }
 
                 $data['verified'] = $status;
-                $_SESSION['data_l'] = $data;
+                $_SESSION['dataPre'] = $data;
                 $_SESSION['last_option'] = $sortBy;
             }
             
             $userTable = TableRegistry::get('Users');
             $datas =  $userTable->find('all')->where($data)->select(['name', 'phone', 'address'])->order(['id' => 'desc'])->toList();
             $this->paginate = [
-                'limit'=>'2'
+                'limit'=>'20'
             ];
             $datas = $userTable->find('all')->where($data)->order([$sortBy => 'desc']);
             $datas = $this->paginate($datas);
-
             $this->set('users', $datas);
-            $this->set('lastData', $data);    
+            $this->set('lastData', $data);       
             $this->set('lastSort', $sortBy);
 
             // Get the current time.

@@ -4,6 +4,7 @@
         <div class="card">
             <h3 class="card-header">Register</h3>
             <div class="card-body">
+                <?php echo $this->Html->link('News', ['controller' => 'post','action'=>'list_post'], ['class'=>'btn btn-info mt-3']); ?>
                 <?php echo $this->Form->create(null, ['enctype'=>'multipart/form-data']) ?>
                 <div class="form-group">
                         <?php echo $this->Form->file('file') ?>
@@ -31,8 +32,12 @@
                     echo $this->Form->button('Register', ['class'=>'btn btn-primary']);
                     echo $this->Form->end();
                 ?>
-                <?php echo $this->Html->link('News', ['controller' => 'post','action'=>'list_post'], ['class'=>'btn btn-info mt-3']); ?>
             </div>
         </div>
     </div>
 </div>
+<style>
+a.btn.btn-info.mt-3 {
+    margin-left: 420px;
+}
+</style>

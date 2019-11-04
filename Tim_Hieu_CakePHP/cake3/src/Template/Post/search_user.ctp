@@ -73,16 +73,19 @@
             <table>
                 <tr>
                     <th>Name</th>
+                    <th>Avatar</th>
                     <th>Gender</th>
                     <th>Phone</th>
                     <th>Email</th>
                     <th>Address</th>
                     <th>Status</th>
                     <th>Number Login</th>
+                    <th>Last Login</th>
                 </tr>
                 <?php foreach($users as $user) :?>
                 <tr>
                     <td><?=  $user['name'] ?></td>
+                    <th><img src="<?=$baseUrl?>webroot/<?= $user['img_path']?>" class="rounded mx-auto" width="20" height="20"></th>
                     <?php if ($user['is_male'] == 1) : ?>
                         <td>Male</td>
                     <?php else : ?>
@@ -97,6 +100,7 @@
                         <td>No active</td>
                     <?php endif?>
                     <td><?=  $user['numoflogin'] ?></td>
+                    <td><?=  $user['lastlogin'] ?></td>
                 </tr>
                 <?php endforeach ?>
             </table>
@@ -143,12 +147,9 @@ table {
 
 </style>
 <script>
-    
-    // document.getElementById('sel').options[id].selected = true
     var lastOption = document.getElementById('sel');
     lastOption = lastOption.getAttribute('data-user');
- 
-    var val = "Phone";
+
     var sel = document.getElementById('sel');
     var opts = sel.options;
     for (var opt, j = 0; opt = opts[j]; j++) {

@@ -39,7 +39,7 @@
                 <li>
                     <?php if (!isset($userName)) : ?>
                     <div class="user">
-                            <a href="/users/register">register</a>
+                            <a href="/users/register">Register</a>
                     </div>
                     <?php else : ?>
                     <!-- userImg -->

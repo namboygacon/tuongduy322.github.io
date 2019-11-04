@@ -7,7 +7,6 @@ use Cake\ORM\TableRegistry;
 use Cake\Utility\Security;
 use Cake\Mailer\Email;
 
-
 class UsersController extends AppController {
 
     public $baseUrl = '';
@@ -66,13 +65,17 @@ class UsersController extends AppController {
         if ($this->request->is('post')){
             $user = $this->Auth->identify();
             if($user) {
+                if($user['verified'] == 0) {
+                    $this->Flash->error(__('Email not properly validated.'));
+                    $this->logout(); // or redirect to logout, not sure =P
+                }
                 $this->Auth->setUser($user);
-
                 $userTable = TableRegistry::get('users');
                 $userLogin = $userTable->get($user['id']);
                 $userLogin->numoflogin = $user['numoflogin'] + 1;
+                $userLogin->lastlogin = date('Y-m-d H:i:s');
                 if (!$userTable->save($userLogin)){
-                    dd('err');
+                    $this->Flash->error('Your email password incorrect');
                 }
                 
                 return $this->redirect($this->Auth->redirectUrl());
@@ -185,7 +188,9 @@ class UsersController extends AppController {
             'email' => $_SESSION['Auth']['User']['email'],
             'id' => $_SESSION['Auth']['User']['id'],
             'imgPath' => $_SESSION['Auth']['User']['img_path'],
-            'verified' => $_SESSION['Auth']['User']['verified']
+            'verified' => $_SESSION['Auth']['User']['verified'],
+            'lastlogin' => $_SESSION['Auth']['User']['lastlogin'],
+            'numlogin' => $_SESSION['Auth']['User']['numoflogin'],
         ];
 
         $this->set('data', $data);
